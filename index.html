@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/cb06fec0a1.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Music Player-->
+    <div class="music-player">
+        <!-- Play List-->
+        <button id="playlist">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <!-- Picture Section-->
+        <img src="assets/ab67616d0000b27334faeb714d6b7ef035611b0f.jpeg" alt="" id="song-image">
+        <!-- Song Details -->
+        <div class="song-details">
+            <p id="song-name">Yakışıklı</p>
+            <p id="song-artist">KÖFN x Simge</p>
+        </div>
+        <!--Player Options-->
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" class="hide">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+        </div>
+        <!-- Audio -->
+        <audio id="audio" preload="metadata" src="assets/KÖFN X Simge - Yakışıklı (Official Video).mp3" ></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+        <!-- Time -->
+        <div class="time-container">
+            <span id="current-time">01.23</span>
+            <span id="max-duration">02.35</span>
+        </div>
+        <!--PlayList-->
+        <div id="playlist-container">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist-songs"></ul>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+
+
+</body>
+</html>
